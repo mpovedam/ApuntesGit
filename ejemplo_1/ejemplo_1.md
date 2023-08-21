@@ -77,3 +77,26 @@ Donde los símbolos representan:
 * **M**   *modified files*
 
 Las dobles columnas indican, la de la izquierda el estado del **staging area** (área preparada) y la de la derecha el estado del **working tree** (área sin preparar), por lo que *note.md* y *ejemplo_1/ejemplo_1.md* están preparados y modificados otra vez por lo que existen cambios sin preparar.
+
+``` Git
+$ git commit -m "Primer commit de la guía básica sobre GIT"
+[main (root-commit) c84cb6e] Primer commit de la guía básica sobre GIT
+ 8 files changed, 212 insertions(+)
+ create mode 100644 .vscode/extensions.json
+ create mode 100644 .vscode/settings.json
+ create mode 100644 ejemplo_1/archivoNuevo.txt
+ create mode 100644 ejemplo_1/ejemplo_1.md
+ create mode 100644 img/areas.png
+ create mode 100644 img/lifecycle.png
+ create mode 100644 img/snapshots.png
+ create mode 100644 note.md
+```
+
+``` Git
+$ git log
+commit c84cb6eb8e6ee1347676d4cce08b91e7fa962d9f (HEAD -> main)
+Author: Mauricio Poveda <mauriciomacias2.0@gmail.com>
+Date:   Mon Aug 21 00:01:55 2023 -0500
+
+    Primer commit de la guía básica sobre GIT
+```

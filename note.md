@@ -95,7 +95,7 @@ Cada archivo de tu repositorio puede tener dos estados:
 
 ### Ejemplo lifecycle
 
-En el siguiente enlace se explican los casos:
+En el siguiente enlace se explican las diferentes situaciones:
 
 * [Ejemplo 1](./ejemplo_1/)
 
