@@ -78,6 +78,8 @@ Donde los símbolos representan:
 
 Las dobles columnas indican, la de la izquierda el estado del **staging area** (área preparada) y la de la derecha el estado del **working tree** (área sin preparar), por lo que *note.md* y *ejemplo_1/ejemplo_1.md* están preparados y modificados otra vez por lo que existen cambios sin preparar.
 
+se adicionan y se realiza commit
+
 ``` Git
 $ git commit -m "Primer commit de la guía básica sobre GIT"
 [main (root-commit) c84cb6e] Primer commit de la guía básica sobre GIT
@@ -92,6 +94,8 @@ $ git commit -m "Primer commit de la guía básica sobre GIT"
  create mode 100644 note.md
 ```
 
+Se revisa el historial
+
 ``` Git
 $ git log
 commit c84cb6eb8e6ee1347676d4cce08b91e7fa962d9f (HEAD -> main)
@@ -100,3 +104,30 @@ Date:   Mon Aug 21 00:01:55 2023 -0500
 
     Primer commit de la guía básica sobre GIT
 ```
+
+Se realizan nuevos cambios a los archivos, se adicionan y se realiza commit
+
+``` Git
+$ git commit -m "Segundo commit, para hacer un log y ver el historial"
+[main 17e9cfe] Segundo commit, para hacer un log y ver el historial
+ 2 files changed, 25 insertions(+), 2 deletions(-)
+```
+
+``` Git
+$ git log
+commit 17e9cfee9e58391b180ad1394ffe37cbdd596b9b (HEAD -> main)
+Author: Mauricio Poveda <mauriciomacias2.0@gmail.com>
+Date:   Mon Aug 21 00:10:31 2023 -0500
+
+    Segundo commit, para hacer un log y ver el historial
+
+commit c84cb6eb8e6ee1347676d4cce08b91e7fa962d9f
+Author: Mauricio Poveda <mauriciomacias2.0@gmail.com>
+Date:   Mon Aug 21 00:01:55 2023 -0500
+
+    Primer commit de la guía básica sobre GIT
+```
+
+La salida genera un tag de los commit, la versión (HEAD -> main) que significa que es la versión más reciente en la rama principal, indica el autor, fecha del cambio y el mensaje del commit realizado.
+
+Para ver las diferencias entre dos commit ejecuto el comando *git diff <commit1> <commit2>*

@@ -105,11 +105,12 @@ En el siguiente enlace se explican las diferentes situaciones:
 > Mientras editas archivos son **modified**, pues han sido cambiados desde su último commit. Luego preparas estos archivos modificados y finalmente confirmas todos los cambios preparados, y repites el ciclo.
 ***
 
+Para ver los Cambios Preparados y No Preparados
+*git diff* te muestra las líneas exactas que fueron añadidas y eliminadas.
 
-
-
->
-git status
+* **git diff :** Este comando compara lo que tienes en tu directorio de trabajo con lo que está en el área de preparación. El resultado te indica los cambios que has hecho pero que aun no has preparado. Es decir, - solo verás los cambios que aun no están preparados
+* **git diff --staged :** Este comando compara tus cambios preparados con la última instantánea confirmada. Es decir, si quieres ver lo que has preparado y será incluido en la próxima confirmación.
+* **git diff <commit1> <commit2> :** Compara los cambios entre dos commit.
 
 
 git rm
