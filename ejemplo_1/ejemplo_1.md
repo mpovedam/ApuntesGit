@@ -78,7 +78,7 @@ Donde los símbolos representan:
 
 Las dobles columnas indican, la de la izquierda el estado del **staging area** (área preparada) y la de la derecha el estado del **working tree** (área sin preparar), por lo que *note.md* y *ejemplo_1/ejemplo_1.md* están preparados y modificados otra vez por lo que existen cambios sin preparar.
 
-se adicionan y se realiza commit
+se adicionan y se realiza commit con ***git commit -m "comentario"***
 
 ``` Git
 $ git commit -m "Primer commit de la guía básica sobre GIT"
@@ -94,7 +94,7 @@ $ git commit -m "Primer commit de la guía básica sobre GIT"
  create mode 100644 note.md
 ```
 
-Se revisa el historial
+Se revisa el historial con ***git log***
 
 ``` Git
 $ git log
