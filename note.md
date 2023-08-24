@@ -297,15 +297,16 @@ git log --pretty=format:"%cn hizo un commit %h el dia %cd" - Muestra mensajes pe
 ## RAMAS
 [Flujo de trabajo Altasian](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow)
 
-git remote add origin [url]
+* **git remote add origin [url]**
 
-git remote
+* **git remote**
 
+```Git
 $ git remote -v
 origin  git@github.com:mpovedam/ApuntesGit.git (fetch)  # enviar cosas
 origin  git@github.com:mpovedam/ApuntesGit.git (push)   # Recibir cosas
-
-git branch -m main -> para cambiar la rama master por main
+```
+* **git branch -m main** -> para cambiar la rama master por main
 
 ```GIT
 $ git push origin main
@@ -327,7 +328,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 Debo traer primero los archivos del repositorio con un pull
 
-git pull origin main
+* **git pull origin main** (Lo pude haber realizado con un fetch)
 
 fatal: refusing to merge unrelated histories  -> para forzar las historias se hace lo siguiente
 
