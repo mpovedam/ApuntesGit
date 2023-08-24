@@ -293,3 +293,50 @@ git log --pretty=format:"%cn hizo un commit %h el dia %cd" - Muestra mensajes pe
 * git log – index.html- Busca los commits en un archivo en específico.
 * git log -S “Por contenido”- Buscar los commits con el contenido dentro del archivo.
 * git log > log.txt - guardar los logs en un archivo txt
+
+## RAMAS
+[Flujo de trabajo Altasian](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow)
+
+git remote add origin [url]
+
+git remote
+
+$ git remote -v
+origin  git@github.com:mpovedam/ApuntesGit.git (fetch)  # enviar cosas
+origin  git@github.com:mpovedam/ApuntesGit.git (push)   # Recibir cosas
+
+git branch -m main -> para cambiar la rama master por main
+
+```GIT
+$ git push origin main
+The authenticity of host 'github.com (140.82.114.4)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enter passphrase for key '/c/Users/Azulito/.ssh/id_rsa':
+To github.com:mpovedam/ApuntesGit.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:mpovedam/ApuntesGit.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+Debo traer primero los archivos del repositorio con un pull
+
+git pull origin main
+
+fatal: refusing to merge unrelated histories  -> para forzar las historias se hace lo siguiente
+
+```Git
+$ git pull origin main --allow-unrelated-histories
+Enter passphrase for key '/c/Users/Azulito/.ssh/id_rsa':
+From github.com:mpovedam/ApuntesGit
+ * branch            main       -> FETCH_HEAD
+error: Your local changes to the following files would be overwritten by merge:
+  img/Git rm Git Reset.webp img/arboles-git.webp
+Merge with strategy ort failed.
+```
