@@ -340,3 +340,4 @@ error: Your local changes to the following files would be overwritten by merge:
   img/Git rm Git Reset.webp img/arboles-git.webp
 Merge with strategy ort failed.
 ```
+Este error se presenta pq tenía cambios adicionales sin confirmar
