@@ -56,6 +56,10 @@ $ git config --list
 $ git config user.name
 ```
 
+Nota: Para agregar varias cuentas: https://platzi.com/blog/agregar-cuentas-git-y-github-computadora/
+Nota2: GPG; https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
+            https://platzi.com/blog/como-firmar-y-verificar-tus-commits-con-una-llave-gpg/
+
 ## 3. Obteniendo un repositorio Git
 
 Puedes obtener un proyecto Git de dos maneras. La primera es tomar un proyecto o directorio existente e importarlo en Git. La segunda es clonar un repositorio existente en Git desde otro servidor.
